@@ -33,5 +33,6 @@ libcii_la_SOURCES = ap.c \
 # memcmp.c
 # memmove.c
 # strncmp.c
-		    
+
+libcii_la_CPPFLAGS = -I$(top_srcdir)/include
 libcii_la_LDFLAGS = -version-info 2:0:0

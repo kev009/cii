@@ -1,12 +1,13 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.68])
+AC_PREREQ([2.61])
 
 AC_INIT([libcii],[2.0],[kevin.bowling@kev009.com])
 
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
+LT_PREREQ([2.2])
 AC_CONFIG_MACRO_DIR([m4])
 
 # Don't look for C++ or Fortran compilers
@@ -36,5 +37,7 @@ AC_FUNC_MALLOC
 AC_FUNC_REALLOC
 AC_CHECK_FUNCS([memchr memmove memset strchr strerror])
 
-AC_CONFIG_FILES([Makefile src/Makefile examples/Makefile misc/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile include/Makefile examples/Makefile
+misc/Makefile])
+
 AC_OUTPUT
