@@ -1,4 +1,4 @@
-include_HEADERS = ap.h \
+pkginclude_HEADERS = ap.h \
 		  arena.h \
 		  arith.h \
 		  array.h \
